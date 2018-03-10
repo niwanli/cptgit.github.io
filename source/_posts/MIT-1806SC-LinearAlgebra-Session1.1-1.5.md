@@ -1,7 +1,7 @@
 ---
 layout: w
 title: MIT 18.06SC Linear Algebra Session 1.1 - 1.5
-date: 2018-03-10 09:58:23
+date: 2018-03-10
 tags:
     - Open Courses
     - Mathematics
