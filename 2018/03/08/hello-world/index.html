@@ -61,8 +61,6 @@
 			
 				<li><a href="/">Home</a></li>
 	        
-				<li><a href="/tags/learning/">Learning</a></li>
-	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -115,8 +113,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -133,9 +129,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">Home</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/learning/">Learning</a></li>
+					<li style="width: 100%"><a href="/">Home</a></li>
 		        
 				</ul>
 			</nav>
@@ -182,27 +176,6 @@
 
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thank you for your donation!<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -270,6 +243,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2018/03/10/test/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          test
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -309,11 +296,17 @@
     	<div class="footer-left">
     		&copy; 2018 Cap
     	</div>
-      	<div class="footer-right">
-      		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>,
-          Theme <a href="http://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten,
-          Favicon made by <a href="http://www.freepik.com/" target="_blank">Freepik</a> from <a href="http://www.flaticon.com/" target="_blank">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC 3.0 BY</a>
-      	</div>
+    	<div class="footer-right">
+    		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>,
+        Theme <a href="http://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-right">
+        Favicon made by <a href="http://www.freepik.com/" target="_blank">Freepik</a> from <a href="http://www.flaticon.com/" target="_blank">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC 3.0 BY</a>
+      </div>
     </div>
   </div>
 </footer>
@@ -411,6 +404,22 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Open Courses</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Mathematics</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Linear Algebra</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">MIT 18.06SC Linear Algebra</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -461,15 +470,15 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://rocketeer.tk/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Link 1</a>
+              <a href="https://rocketeer.tk/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Supreme Headquarters</a>
             </li>
           
             <li class="search-li">
-              <a href="https://www.youtube.com/channel/UCh6DvGxHiStTfZGqs1HVaOQ" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Link 2</a>
+              <a href="https://www.youtube.com/channel/UCh6DvGxHiStTfZGqs1HVaOQ" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>My Youtube</a>
             </li>
           
             <li class="search-li">
-              <a href="https://space.bilibili.com/155512273/#!/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Link 3</a>
+              <a href="https://space.bilibili.com/155512273/#!/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>My BiliBili</a>
             </li>
           
         </ul>
@@ -480,7 +489,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">既然你都找到这里了……&lt;br&gt;&lt;br&gt;那我只有告诉你，&lt;br&gt;中文还在开发中……</div>
   	  	
     	</section>
     

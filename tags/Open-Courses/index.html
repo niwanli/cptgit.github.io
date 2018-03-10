@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://cptgit.github.io">
-  <title>Cap&#39;s Outpost</title>
+  <title>Tag: Open Courses | Cap&#39;s Outpost</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="sharing my life">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Cap&#39;s Outpost">
-<meta property="og:url" content="http://cptgit.github.io/index.html">
+<meta property="og:url" content="http://cptgit.github.io/tags/Open-Courses/index.html">
 <meta property="og:site_name" content="Cap&#39;s Outpost">
 <meta property="og:description" content="sharing my life">
 <meta property="og:locale" content="en">
@@ -145,54 +145,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="w-test" class="article article-type-w  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-w">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/03/10/test/" class="archive-article-date">
+  	<time datetime="2018-03-10T01:58:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-10</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/10/test/">test</a>
+      <a class="archive-article-title" href="/2018/03/10/test/">test</a>
     </h1>
   
 
-        
-        <a href="/2018/03/10/test/" class="archive-article-date">
-  	<time datetime="2018-03-10T01:58:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hmmm… I’m learning <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/index.htm" target="_blank" rel="noopener">MIT 18.06SC Linear Algebra</a> at <a href="https://ocw.mit.edu/index.htm" target="_blank" rel="noopener">MIT OpenCourseWarere</a>.</p>
-<p>OK, here we go!</p>
-<h1 id="Unit-I-A-boldsymbol-x-boldsymbol-b-and-the-Four-Subspaces"><a href="#Unit-I-A-boldsymbol-x-boldsymbol-b-and-the-Four-Subspaces" class="headerlink" title="Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four Subspaces"></a>Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four Subspaces</h1><h2 id="Session-1-1-The-Geometry-of-Linear-Equations"><a href="#Session-1-1-The-Geometry-of-Linear-Equations" class="headerlink" title="Session 1.1: The Geometry of Linear Equations"></a>Session 1.1: The Geometry of Linear Equations</h2><p>We have a system of equations:<br>$$<br>\left\{<br>\begin{aligned}<br>2x - y &amp;= 0 \\<br>-x + 2y &amp;= 3<br>\end{aligned}<br>\right .<br>$$</p>
-<h3 id="Row-Picture"><a href="#Row-Picture" class="headerlink" title="Row Picture"></a>Row Picture</h3><p>Line $2x - y = 0$ and line $-x + 2y = 0$ intersects at the point $(1, 2)$, so $(1, 2)$ is the solution of the system of equations.</p>
-<blockquote>
-<p>Maybe I should draw a X-Y coordinates here…</p>
-</blockquote>
-<h3 id="Column-Picture"><a href="#Column-Picture" class="headerlink" title="Column Picture"></a>Column Picture</h3><p>We rewrite the system of linear equations as a single equation:</p>
-<p>$$<br>x\begin{bmatrix}2 \\ -1\end{bmatrix} + y\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}<br>$$</p>
-<p>We see $x$ and $y$ as scalars of column vectors: $\boldsymbol{v_1} = \begin{bmatrix}2 \\ -1\end{bmatrix}$ and $\boldsymbol{v_2} = \begin{bmatrix}-1 \\ 2\end{bmatrix}$, and the sum $x\boldsymbol{v_1} + y\boldsymbol{v_2}$ is called a <em>linear combination</em> of $\boldsymbol{v_1}$ and $\boldsymbol{v_2}$.</p>
-<p>Geometrically, we can find one copy of $\boldsymbol{v_1}$ added to two copies of $\boldsymbol{v_2}$ just equals the vector $\begin{bmatrix}0 \\ 3\end{bmatrix}$. Then the solution should be $x = 1, y =2$.</p>
-<blockquote>
-<p>I will add a figure when time is available &gt;_&gt;</p>
-</blockquote>
-<h3 id="Matrix-Picture"><a href="#Matrix-Picture" class="headerlink" title="Matrix Picture"></a>Matrix Picture</h3><p>We rewrite the equations in our example as a compact form,</p>
-<p>$$<br>A\boldsymbol{x} = \boldsymbol{b},<br>$$</p>
-<p>that is</p>
-<p>$$<br>\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix}\begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}<br>$$</p>
-<h3 id="Matrix-Multiplication"><a href="#Matrix-Multiplication" class="headerlink" title="Matrix Multiplication"></a>Matrix Multiplication</h3><p>$$<br>\begin{aligned}<br>\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix} \begin{bmatrix}1 \\ 2\end{bmatrix} = 1\begin{bmatrix}2 \\ -1\end{bmatrix} + 2\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}<br>\end{aligned}<br>$$</p>
-<p>A matrix times by a vector is just <strong>a linear combination of the column vectors of the matrix</strong>.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -216,112 +196,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/10/test/">Read more >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2018/03/08/hello-world/" class="archive-article-date">
-  	<time datetime="2018-03-08T01:29:37.885Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/08/hello-world/">Read more >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -351,10 +238,10 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
