@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://cptgit.github.io">
   <title>test | Cap&#39;s Outpost</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hmmm… I’m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWarere. OK, here we go! Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four SubspacesSession 1.1: The Geometry of Linear EquationsWe">
+  <meta name="description" content="Hmmm… I’m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWare. OK, here we go! Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces Session 1.1: The Geometry of Linear Equation">
 <meta name="keywords" content="Open Courses,Mathematics,Linear Algebra,MIT 18.06SC Linear Algebra">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test">
 <meta property="og:url" content="http://cptgit.github.io/2018/03/10/test/index.html">
 <meta property="og:site_name" content="Cap&#39;s Outpost">
-<meta property="og:description" content="Hmmm… I’m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWarere. OK, here we go! Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four SubspacesSession 1.1: The Geometry of Linear EquationsWe">
+<meta property="og:description" content="Hmmm… I’m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWare. OK, here we go! Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces Session 1.1: The Geometry of Linear Equation">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-03-10T03:38:50.225Z">
+<meta property="og:updated_time" content="2018-03-10T08:49:40.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test">
-<meta name="twitter:description" content="Hmmm… I’m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWarere. OK, here we go! Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four SubspacesSession 1.1: The Geometry of Linear EquationsWe">
+<meta name="twitter:description" content="Hmmm… I’m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWare. OK, here we go! Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces Session 1.1: The Geometry of Linear Equation">
   
     <link rel="alternative" href="/atom.xml" title="Cap&#39;s Outpost" type="application/atom+xml">
   
@@ -165,25 +165,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hmmm… I’m learning <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/index.htm" target="_blank" rel="noopener">MIT 18.06SC Linear Algebra</a> at <a href="https://ocw.mit.edu/index.htm" target="_blank" rel="noopener">MIT OpenCourseWarere</a>.</p>
+        <p>Hmmm… I’m learning <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/index.htm" target="_blank" rel="noopener">MIT 18.06SC Linear Algebra</a> at <a href="https://ocw.mit.edu/index.htm" target="_blank" rel="noopener">MIT OpenCourseWare</a>.</p>
 <p>OK, here we go!</p>
-<h1 id="Unit-I-A-boldsymbol-x-boldsymbol-b-and-the-Four-Subspaces"><a href="#Unit-I-A-boldsymbol-x-boldsymbol-b-and-the-Four-Subspaces" class="headerlink" title="Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four Subspaces"></a>Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four Subspaces</h1><h2 id="Session-1-1-The-Geometry-of-Linear-Equations"><a href="#Session-1-1-The-Geometry-of-Linear-Equations" class="headerlink" title="Session 1.1: The Geometry of Linear Equations"></a>Session 1.1: The Geometry of Linear Equations</h2><p>We have a system of equations:<br>$$<br>\left\{<br>\begin{aligned}<br>2x - y &amp;= 0 \\<br>-x + 2y &amp;= 3<br>\end{aligned}<br>\right .<br>$$</p>
-<h3 id="Row-Picture"><a href="#Row-Picture" class="headerlink" title="Row Picture"></a>Row Picture</h3><p>Line $2x - y = 0$ and line $-x + 2y = 0$ intersects at the point $(1, 2)$, so $(1, 2)$ is the solution of the system of equations.</p>
+<h1 id="unit-i-aboldsymbolx-boldsymbolb-and-the-four-subspaces">Unit I: <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span> and the Four Subspaces</h1>
+<h2 id="session-1.1-the-geometry-of-linear-equations">Session 1.1: The Geometry of Linear Equations</h2>
+<p>We have a system of equations: <span class="math display">\[
+\left\{
+\begin{aligned}
+2x - y &amp;= 0 \\
+-x + 2y &amp;= 3
+\end{aligned}
+\right .
+\]</span></p>
+<h3 id="row-picture">Row Picture</h3>
+<p>Line <span class="math inline">\(2x - y = 0\)</span> and line <span class="math inline">\(-x + 2y = 0\)</span> intersects at the point <span class="math inline">\((1, 2)\)</span>, so <span class="math inline">\((1, 2)\)</span> is the solution of the system of equations.</p>
 <blockquote>
 <p>Maybe I should draw a X-Y coordinates here…</p>
 </blockquote>
-<h3 id="Column-Picture"><a href="#Column-Picture" class="headerlink" title="Column Picture"></a>Column Picture</h3><p>We rewrite the system of linear equations as a single equation:</p>
-<p>$$<br>x\begin{bmatrix}2 \\ -1\end{bmatrix} + y\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}<br>$$</p>
-<p>We see $x$ and $y$ as scalars of column vectors: $\boldsymbol{v_1} = \begin{bmatrix}2 \\ -1\end{bmatrix}$ and $\boldsymbol{v_2} = \begin{bmatrix}-1 \\ 2\end{bmatrix}$, and the sum $x\boldsymbol{v_1} + y\boldsymbol{v_2}$ is called a <em>linear combination</em> of $\boldsymbol{v_1}$ and $\boldsymbol{v_2}$.</p>
-<p>Geometrically, we can find one copy of $\boldsymbol{v_1}$ added to two copies of $\boldsymbol{v_2}$ just equals the vector $\begin{bmatrix}0 \\ 3\end{bmatrix}$. Then the solution should be $x = 1, y =2$.</p>
+<h3 id="column-picture">Column Picture</h3>
+<p>We rewrite the system of linear equations as a single equation:</p>
+<p><span class="math display">\[
+x\begin{bmatrix}2 \\ -1\end{bmatrix} + y\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}
+\]</span></p>
+<p>We see <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> as scalars of column vectors: <span class="math inline">\(\boldsymbol{v_1} = \begin{bmatrix}2 \\ -1\end{bmatrix}\)</span> and <span class="math inline">\(\boldsymbol{v_2} = \begin{bmatrix}-1 \\ 2\end{bmatrix}\)</span>, and the sum <span class="math inline">\(x\boldsymbol{v_1} + y\boldsymbol{v_2}\)</span> is called a <em>linear combination</em> of <span class="math inline">\(\boldsymbol{v_1}\)</span> and <span class="math inline">\(\boldsymbol{v_2}\)</span>.</p>
+<p>Geometrically, we can find one copy of <span class="math inline">\(\boldsymbol{v_1}\)</span> added to two copies of <span class="math inline">\(\boldsymbol{v_2}\)</span> just equals the vector <span class="math inline">\(\begin{bmatrix}0 \\ 3\end{bmatrix}\)</span>. Then the solution should be <span class="math inline">\(x = 1, y =2\)</span>.</p>
 <blockquote>
 <p>I will add a figure when time is available &gt;_&gt;</p>
 </blockquote>
-<h3 id="Matrix-Picture"><a href="#Matrix-Picture" class="headerlink" title="Matrix Picture"></a>Matrix Picture</h3><p>We rewrite the equations in our example as a compact form,</p>
-<p>$$<br>A\boldsymbol{x} = \boldsymbol{b},<br>$$</p>
+<h3 id="matrix-picture">Matrix Picture</h3>
+<p>We rewrite the equations in our example as a compact form,</p>
+<p><span class="math display">\[
+A\boldsymbol{x} = \boldsymbol{b},
+\]</span></p>
 <p>that is</p>
-<p>$$<br>\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix}\begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}<br>$$</p>
-<h3 id="Matrix-Multiplication"><a href="#Matrix-Multiplication" class="headerlink" title="Matrix Multiplication"></a>Matrix Multiplication</h3><p>$$<br>\begin{aligned}<br>\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix} \begin{bmatrix}1 \\ 2\end{bmatrix} = 1\begin{bmatrix}2 \\ -1\end{bmatrix} + 2\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}<br>\end{aligned}<br>$$</p>
+<p><span class="math display">\[
+\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix}\begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}
+\]</span></p>
+<h3 id="matrix-multiplication">Matrix Multiplication</h3>
+<p><span class="math display">\[
+\begin{aligned}
+\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix} \begin{bmatrix}1 \\ 2\end{bmatrix} = 1\begin{bmatrix}2 \\ -1\end{bmatrix} + 2\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}
+\end{aligned}
+\]</span></p>
 <p>A matrix times by a vector is just <strong>a linear combination of the column vectors of the matrix</strong>.</p>
 
       
@@ -309,7 +332,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Unit-I-A-boldsymbol-x-boldsymbol-b-and-the-Four-Subspaces"><span class="toc-number">1.</span> <span class="toc-text">Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four Subspaces</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session-1-1-The-Geometry-of-Linear-Equations"><span class="toc-number">1.1.</span> <span class="toc-text">Session 1.1: The Geometry of Linear Equations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Row-Picture"><span class="toc-number">1.1.1.</span> <span class="toc-text">Row Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Column-Picture"><span class="toc-number">1.1.2.</span> <span class="toc-text">Column Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix-Picture"><span class="toc-number">1.1.3.</span> <span class="toc-text">Matrix Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Matrix-Multiplication"><span class="toc-number">1.1.4.</span> <span class="toc-text">Matrix Multiplication</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#unit-i-aboldsymbolx-boldsymbolb-and-the-four-subspaces"><span class="toc-number">1.</span> <span class="toc-text">Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#session-1.1-the-geometry-of-linear-equations"><span class="toc-number">1.1.</span> <span class="toc-text">Session 1.1: The Geometry of Linear Equations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#row-picture"><span class="toc-number">1.1.1.</span> <span class="toc-text">Row Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#column-picture"><span class="toc-number">1.1.2.</span> <span class="toc-text">Column Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#matrix-picture"><span class="toc-number">1.1.3.</span> <span class="toc-text">Matrix Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#matrix-multiplication"><span class="toc-number">1.1.4.</span> <span class="toc-text">Matrix Multiplication</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
