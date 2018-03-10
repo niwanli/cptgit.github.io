@@ -67,7 +67,7 @@ google_analytics: ''
 favicon: /uploads/img/omega.png
 
 #你的头像url
-avatar: /uploads/img/omega.png
+avatar: /uploads/img/avatar.png
 
 #是否开启分享
 share_jia: true
@@ -115,7 +115,7 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: 'Archive'
-  friends: 'Friend links'
+  friends: 'Recommended links'
   aboutme: 'About me'
 
 friends:
