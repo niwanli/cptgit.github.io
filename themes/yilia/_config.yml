@@ -90,11 +90,11 @@ changyan_conf: false
 disqus: false
 
 #5、Gitment
-gitment_owner: false      #你的 GitHub ID
-gitment_repo: ''          #存储评论的 repo
+gitment_owner: true      #你的 GitHub ID
+gitment_repo: 'Storing-comments-on-githubio'          #存储评论的 repo
 gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
+  client_id: '4d03732b51a1d8746e8f'           #client ID
+  client_secret: 'e439f67449a883e10d9c62dad75e4a633c094bf8'       #client secret
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -126,4 +126,4 @@ friends:
   #友情链接5: http://localhost:4000/
   #友情链接6: http://localhost:4000/
 
-aboutme: 既然你都找到这里了……<br><br>那我只有告诉你，<br>中文还在开发中……
+aboutme: 既然你都找到这里了……<br><br>那我只有告诉你，<br>中文版还在开发中……<br>怎样怎样~不服来跟我打红警呀~
