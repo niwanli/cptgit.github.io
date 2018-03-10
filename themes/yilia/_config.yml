@@ -90,6 +90,7 @@ changyan_conf: false
 disqus: false
 
 #5、Gitment
+gitment: true
 gitment_owner: CptGit      #你的 GitHub ID
 gitment_repo: 'Storing-comments-on-githubio'          #存储评论的 repo
 gitment_oauth:
