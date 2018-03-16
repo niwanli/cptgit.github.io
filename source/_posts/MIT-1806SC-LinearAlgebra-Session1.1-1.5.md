@@ -103,7 +103,7 @@ The subspaces of $\mathbb{R}^3$ are:
 
     $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{b}$ has the unique solution $\boldsymbol{x}$ for each $\boldsymbol{b}$
 
-    $\Leftrightarrow$ $A\boldsymbol{x} = 0$ has no non-zero solution $\boldsymbol{x}$
+    $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{0}$ has no non-zero solution $\boldsymbol{x}$
 
     $\Leftrightarrow$ The columns of $A$ are *independent*
 
@@ -115,7 +115,7 @@ The subspaces of $\mathbb{R}^3$ are:
 
     $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{b}$ has a solution $\boldsymbol{x}$ only for some of $\boldsymbol{b}$ in the vector space
 
-    $\Leftrightarrow$ $A\boldsymbol{x} = 0$ has non-zero solutions $\boldsymbol{x}$
+    $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{0}$ has non-zero solutions $\boldsymbol{x}$
 
     $\Leftrightarrow$ The columns of $A$ are *dependent*
 
@@ -253,7 +253,7 @@ AB = \sum_{k=1}{n}
 \begin{bmatrix}b_{k1} & \cdots & b_{kp}\end{bmatrix}
 $$
 
->note: I fixed a typo in the orginal MIT's lecture summary here: $b_{kp}$ instead of $b_{kn}$.
+>note: Here I fixed a typo in the [lecture summary (PDf)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf) of this session: $b_{kp}$ instead of the original $b_{kn}$.
 
 #### Blocks
 
@@ -272,7 +272,7 @@ If $A$ is *singular* or *not invertible*,
 
 then A does not have an inverse,
 
-and we can find some non-zero vector $\boldsymbol{x}$ for which $A\boldsymbol{x} = 0$
+and we can find some non-zero vector $\boldsymbol{x}$ for which $A\boldsymbol{x} = \boldsymbol{0}$
 
 #### Gauss-Jordan Elimination
 
