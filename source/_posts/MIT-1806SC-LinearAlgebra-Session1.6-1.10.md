@@ -22,6 +22,8 @@ Session 1.6: Transpose, Permutation, Vector Spaces $\mathbb{R}^n$
 
 $$(A^T)_{ij} = A_{ji}$$
 
+<!--more-->
+
 Given any matrix $R$ the product $R^TR$ is always *symmetric*, which means the transpose of a matrix equals itself, because $(R^TR)^T = R^T(R^T)^T = R^TR$.
 
 ### Vector spaces

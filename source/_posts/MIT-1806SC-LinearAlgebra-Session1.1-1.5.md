@@ -20,8 +20,6 @@ Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four Subspaces
 Session 1.1: The Geometry of Linear Equations
 ----------------
 
-<!--more-->
-
 We have a system of equations:
 $$
 \left\{
@@ -31,6 +29,8 @@ $$
 \end{aligned}
 \right .
 $$
+
+<!--more-->
 
 ### Row Picture
 
