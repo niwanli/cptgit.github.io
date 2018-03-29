@@ -145,6 +145,293 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="w-MIT-1806SC-LinearAlgebra-Session1.6-1.10" class="article article-type-w  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/29/MIT-1806SC-LinearAlgebra-Session1.6-1.10/">MIT 1806SC Linear Algebra Session1.6 - 1.10</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/29/MIT-1806SC-LinearAlgebra-Session1.6-1.10/" class="archive-article-date">
+  	<time datetime="2018-03-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="session-1.6-transpose-permutation-vector-spaces-mathbbrn">Session 1.6: Transpose, Permutation, Vector Spaces <span class="math inline">\(\mathbb{R}^n\)</span></h2>
+<h3 id="permutations">Permutations</h3>
+<blockquote>
+<p>Nothing new here.</p>
+</blockquote>
+<h3 id="transposes">Transposes</h3>
+<p><span class="math display">\[(A^T)_{ij} = A_{ji}\]</span></p>
+<p>Given any matrix <span class="math inline">\(R\)</span> the product <span class="math inline">\(R^TR\)</span> is always <em>symmetric</em>, which means the transpose of a matrix equals itself, because <span class="math inline">\((R^TR)^T = R^T(R^T)^T = R^TR\)</span>.</p>
+<h3 id="vector-spaces">Vector spaces</h3>
+<h4 id="closure">Closure</h4>
+<p>A collection of vectors has to satisfy two conditions:</p>
+<ol style="list-style-type: decimal">
+<li>closed under addition, which means the sum of any two vectors in the collection lies again in the collection,</li>
+<li>closed under multiplication by any real numbers, that is to say that multiplying any vector in the collection by any real number will not give a vector beyond the collection,</li>
+</ol>
+<p>or, to put it in another way, closed under linear combinations.</p>
+<p>s.t. we call the collection a <em>vector space</em>.</p>
+<h4 id="subspaces">Subspaces</h4>
+<p>A vector space that is contained inside of another vector space is called a <em>subspace</em> of that space. For example,</p>
+<p>the subspaces of <span class="math inline">\(\mathbb{R}^2\)</span> are:</p>
+<ol style="list-style-type: decimal">
+<li>all of <span class="math inline">\(\mathbb{R}^2\)</span>,</li>
+<li>any line through the zero vector and</li>
+<li>the zero vector alone.</li>
+</ol>
+<p><strong>Every subspace must contain the zero vector.</strong></p>
+<h4 id="column-space">Column space</h4>
+<p>Given a matrix <span class="math inline">\(A\)</span>, all the linear combinations of the columns of <span class="math inline">\(A\)</span> form a subspace. This is the <em>column space</em> <span class="math inline">\(C(A)\)</span>.</p>
+<p>For example, if <span class="math inline">\(A = \begin{bmatrix}1 &amp; 3 \\ 2 &amp; 3 \\ 4 &amp; 1\end{bmatrix}\)</span>, the column space of <span class="math inline">\(A\)</span> is the plane through the origin in <span class="math inline">\(\mathbb{R}^3\)</span> containing <span class="math inline">\(\begin{bmatrix}1 \\ 2 \\ 4\end{bmatrix}\)</span> and <span class="math inline">\(\begin{bmatrix}3 \\ 3 \\ 1\end{bmatrix}\)</span>.</p>
+<hr>
+<h2 id="session-1.7-column-space-and-nullspace">Session 1.7: Column Space and Nullspace</h2>
+<blockquote>
+<p>A typo in both <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/column-space-and-nullspace/MIT18_06SCF11_Ses1.6prob.pdf" target="_blank" rel="noopener">Problems (PDF)</a> and <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/column-space-and-nullspace/MIT18_06SCF11_Ses1.6sol.pdf" target="_blank" rel="noopener">Solutions (PDF)</a> of this session:</p>
+<blockquote>
+<p>Problem 6.2: <span class="math inline">\(x - 3y - x = 0\)</span> should be <span class="math inline">\(x -3y - z = 0\)</span>.</p>
+</blockquote>
+</blockquote>
+<h3 id="review-of-subspaces">Review of subspaces</h3>
+<p>The union of two subspaces is generally not a subspace, but the intersection of two subspaces is a subspace.</p>
+<h3 id="column-space-of-a-and-solving-aboldsymbolx-boldsymbolb">Column space of <span class="math inline">\(A\)</span> and solving <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span></h3>
+<p>Given a matrix <span class="math inline">\(A\)</span>, the system of linear equations <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span> is solvable exactly when <span class="math inline">\(\boldsymbol{b}\)</span> is a vector in the <em>column space</em> of <span class="math inline">\(A\)</span>.</p>
+<h3 id="nullspace-of-a">Nullspace of <span class="math inline">\(A\)</span></h3>
+<p>The <em>nullspace</em> of a matrix <span class="math inline">\(A\)</span> is the collection <span class="math inline">\(x\)</span> to the equation <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{0}\)</span>.</p>
+<p>For example, <span class="math display">\[
+\begin{bmatrix}1 &amp; 1 &amp; 2 \\ 2 &amp; 1 &amp; 3 \\ 3 &amp; 1 &amp; 4 \\ 4 &amp; 1 &amp; 5\end{bmatrix}\begin{bmatrix}x_1 \\ x_2 \\ x_3\end{bmatrix} = \begin{bmatrix}0 \\ 0 \\ 0 \\ 0\end{bmatrix},
+\]</span> the nullspace <span class="math inline">\(N(A)\)</span> consists of all multiples of <span class="math inline">\(\begin{bmatrix}1 \\ 1 \\ -1\end{bmatrix}\)</span>. This nullspace is a line in <span class="math inline">\(\mathbb{R}^3\)</span>.</p>
+<p>Attention, a nullspace is a vector space because it obviously satisfies the requirements about addition and scale multiplication. That is to say that any sum or multiple of solutions of <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{0}\)</span> is also a solution: <span class="math inline">\(A(\boldsymbol{x}_1 + \boldsymbol{x}_2) = \boldsymbol{0} + \boldsymbol{0} = \boldsymbol{0}\)</span> and <span class="math inline">\(A(c\boldsymbol{x}) = cA\boldsymbol{x} = c\boldsymbol{0} = \boldsymbol{0}\)</span>.</p>
+<h4 id="other-values-of-boldsymbolb">Other values of <span class="math inline">\(\boldsymbol{b}\)</span></h4>
+<p>The solutions to the equation: <span class="math display">\[
+\begin{bmatrix}1 &amp; 1 &amp; 2 \\ 2 &amp; 1 &amp; 3 \\ 3 &amp; 1 &amp; 4 \\ 4 &amp; 1 &amp; 5\end{bmatrix}\begin{bmatrix}x_1 \\ x_2 \\ x_3\end{bmatrix} = \begin{bmatrix}1 \\ 2 \\ 3 \\ 4\end{bmatrix},
+\]</span> do not form a subspace. This conclusion is obvious since the zero vector is not a solution to the equation. Actually, the set of solutions forms a line in <span class="math inline">\(\mathbb{R}^3\)</span> that pass through the points <span class="math inline">\(\begin{bmatrix}1 \\ 0 \\ 0\end{bmatrix}\)</span> and <span class="math inline">\(\begin{bmatrix}0 \\ -1 \\ 1\end{bmatrix}\)</span>, but not <span class="math inline">\(\begin{bmatrix}0 \\ 0 \\ 0\end{bmatrix}\)</span>.</p>
+<hr>
+<h2 id="session-1.8-solving-aboldsymbolx-boldsymbol0-pivot-variables-special-solutions">Session 1.8: Solving <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{0}\)</span>: Pivot Variables, Special Solutions</h2>
+<blockquote>
+<p>A typo in <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/solving-ax-0-pivot-variables-special-solutions/MIT18_06SCF11_Ses1.7sol.pdf" target="_blank" rel="noopener">Solutions (PDF)</a> of this session:</p>
+<blockquote>
+<p>Problem 7.1: <span class="math inline">\(- 23/4\)</span> in rref of <span class="math inline">\(A\)</span> should be <span class="math inline">\(23/4\)</span>, and <span class="math inline">\(23/4\)</span> in the solution <span class="math inline">\(\boldsymbol{x}\)</span> should be <span class="math inline">\(-23/4\)</span>.</p>
+</blockquote>
+</blockquote>
+<h3 id="computing-the-nullspace">Computing the nullspace</h3>
+<p>Just like the way we eliminate the invertible square matrix, we can do the same thing for any matrix <span class="math inline">\(A\)</span>.</p>
+<p>Suppose: <span class="math display">\[
+A = \begin{bmatrix}
+1 &amp; 2 &amp; 2 &amp; 2 \\
+2 &amp; 4 &amp; 6 &amp; 8\\
+3 &amp; 6 &amp; 8 &amp; 10
+\end{bmatrix}.
+\]</span> The elimination gives us: <span class="math display">\[
+A = \begin{bmatrix}
+1 &amp; 2 &amp; 2 &amp; 2 \\
+2 &amp; 4 &amp; 6 &amp; 8 \\
+3 &amp; 6 &amp; 8 &amp; 10
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+1 &amp; 2 &amp; 2 &amp; 2 \\
+0 &amp; 0 &amp; 2 &amp; 4 \\
+0 &amp; 0 &amp; 2 &amp; 4
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+1 &amp; 2 &amp; 2 &amp; 2 \\
+0 &amp; 0 &amp; 2 &amp; 4 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+= U
+\]</span> We call U in <em>echelon</em> form. The <em>rank</em> of a matrix <span class="math inline">\(A\)</span> is the number of pivots it has. In this example, the rank of <span class="math inline">\(A\)</span> is <span class="math inline">\(2\)</span>.</p>
+<h3 id="special-solutions">Special solutions</h3>
+<p>We can use back-substitution to find the solution <span class="math inline">\(\boldsymbol{x}\)</span> to the equation <span class="math inline">\(U\boldsymbol{x} = \boldsymbol{0}\)</span>. In the example, column 1 and 3 are <em>pivot columns</em>, column 2 and 4 are <em>free columns</em>. We can assign any value to <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_4\)</span>; we call them <em>free variables</em>. Yes, <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_3\)</span> are <em>pivot variables</em>.</p>
+<p>Suppose <span class="math inline">\(x_2 = 1\)</span> and <span class="math inline">\(x_4 = 0\)</span>, then: <span class="math inline">\(x_3 = 0\)</span> and <span class="math inline">\(x_1 = -2\)</span>. So that gives us one solution <span class="math inline">\(\boldsymbol{x} = \begin{bmatrix}-2 \\ 1 \\ 0 \\ 0\end{bmatrix}\)</span>. Similarly, if <span class="math inline">\(x_2 = 0\)</span> and <span class="math inline">\(x_4 = 1\)</span>, then we'll get another solution <span class="math inline">\(\boldsymbol{x} = \begin{bmatrix}2 \\ 0 \\ -2 \\ 1\end{bmatrix}\)</span>. <strong>The nullspace of <span class="math inline">\(A\)</span> is the collection of all linear combinations of these &quot;special solution&quot; vectors.</strong></p>
+<p>A fact we should note is that the <em>rank</em> of <span class="math inline">\(A\)</span> equals the number of pivot columns, so the number of free columns is the number of columns minus the number of pivot columns, which is also the number of special solution vectors and the dimension of the nullspace.</p>
+<h3 id="reduced-row-echelon-form">Reduced row echelon form</h3>
+<p><em>Reduced row echelon form</em> (rref form) means pivots equal to 1 and zeros above and below the pivots. Eliminating U gives us a rref form matrix <span class="math inline">\(R\)</span>: <span class="math display">\[
+U = \begin{bmatrix}
+1 &amp; 2 &amp; 2 &amp; 2 \\
+0 &amp; 0 &amp; 2 &amp; 4 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+1 &amp; 2 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 2 &amp; 4 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+1 &amp; 2 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+= R.
+\]</span> Generally, <span class="math inline">\(R\)</span> can be rewritten with a copy of the identity matrix in the upper left corner and some free columns on the right, possibly followed by the lower rows filled with zeros: <span class="math display">\[
+R = \begin{bmatrix}
+I &amp; F \\
+\boldsymbol{0} &amp; \boldsymbol{0}
+\end{bmatrix}.
+\]</span> Here <span class="math inline">\(I\)</span> is an <span class="math inline">\(r \times r\)</span> square matrix and <span class="math inline">\(F\)</span> is an <span class="math inline">\(r \times (n - r)\)</span> matrix.</p>
+<p>And we can find the nullspace matrix <span class="math inline">\(N = \begin{bmatrix}-F \\ I\end{bmatrix}\)</span> s.t. <span class="math inline">\(RN = \boldsymbol{0}\)</span>. Here <span class="math inline">\(I\)</span> is an <span class="math inline">\((n - r) \times (n - r)\)</span> square matrix and <span class="math inline">\(F\)</span> is an <span class="math inline">\(r \times (n - r)\)</span> matrix. The columns of <span class="math inline">\(N\)</span> are the special solutions.</p>
+<hr>
+<h2 id="session-1.9-solving-aboldsymbolx-boldsymbolb-reduced-row-form-r">Session 1.9: Solving <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span>: Reduced Row Form R</h2>
+<h3 id="solvability-conditions-on-boldsymbolb">Solvability conditions on <span class="math inline">\(\boldsymbol{b}\)</span></h3>
+<p>We again the example in the example in the previous session: <span class="math display">\[
+A = \begin{bmatrix}
+1 &amp; 2 &amp; 2 &amp; 2\\
+2 &amp; 4 &amp; 6 &amp; 8\\
+3 &amp; 6 &amp; 8 &amp; 10
+\end{bmatrix}.
+\]</span> Using Gauss-Jordan elimination: <span class="math display">\[
+\left[
+\begin{array}{c|c}
+\begin{matrix}
+1 &amp; 2 &amp; 2 &amp; 2\\
+2 &amp; 4 &amp; 6 &amp; 2\\
+3 &amp; 6 &amp; 8 &amp;10
+\end{matrix}
+&amp;
+\begin{matrix}
+b_1 \\ b_2 \\ b_3
+\end{matrix}
+\end{array}
+\right]
+\rightarrow\cdots\rightarrow
+\left[
+\begin{array}{c|l}
+\begin{matrix}
+1 &amp; 2 &amp; 2 &amp; 2\\
+0 &amp; 0 &amp; 2 &amp; 4 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{matrix}
+&amp;
+\begin{array}{l}
+b_1 \\ b_2 - 2b_1 \\ b_3-b_2-b_1
+\end{array}
+\end{array}
+\right].
+\]</span> In our example, row 3 of <span class="math inline">\(A\)</span> is completely eliminated. So if <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span> has a solution, then <span class="math inline">\(b_3 - b_2 - b_1 = 0\)</span>.</p>
+<p>From an earlier lecture, we know that <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span> is solvable exactly when <span class="math inline">\(\boldsymbol{b}\)</span> is in the column space <span class="math inline">\(C(A)\)</span>. In fact this condition is equivalent with <span class="math inline">\(b_3 - b_2 - b_1 = 0\)</span> here.</p>
+<h3 id="computing-solution">Computing solution</h3>
+<p>The complete solution is a particular solution plus all the vectors in the nullspace. That is <span class="math inline">\(\boldsymbol{x}_{complete} = \boldsymbol{x}_p + \boldsymbol{x}_n\)</span>, where <span class="math inline">\(\boldsymbol{x}_p\)</span> is a particular solution and <span class="math inline">\(\boldsymbol{x}_n\)</span> is a generic vector in the nullspace. To see this, we add <span class="math inline">\(A\boldsymbol{x}_p = \boldsymbol{b}\)</span> to <span class="math inline">\(A\boldsymbol{x}_n = 0\)</span> and get <span class="math inline">\(A(\boldsymbol{x}_p + \boldsymbol{x}_n) = \boldsymbol{b}\)</span> for every vector <span class="math inline">\(\boldsymbol{x}_n\)</span> in the nullspace.</p>
+<h4 id="a-particular-solution">A particular solution</h4>
+<p>For our matrix <span class="math inline">\(A\)</span>, we choose <span class="math inline">\(\boldsymbol{b} = \begin{bmatrix}1 \\ 5 \\ 6\end{bmatrix}\)</span>, then we get a particular solution <span class="math inline">\(\boldsymbol{x} = \begin{bmatrix}-2 \\ 0 \\ 3/2 \\ 0\end{bmatrix}\)</span> when we let all free variables <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_4\)</span> equal <span class="math inline">\(0\)</span>. (We would get another particular solution when assigning different <span class="math inline">\(x_2\)</span> or <span class="math inline">\(x_4\)</span>. This will not affect the complete solution.)</p>
+<h4 id="combined-with-nullspace">Combined with nullspace</h4>
+<p>From last lecture we learned that the nullspace of <span class="math inline">\(A\)</span> is the collection of all combinations of the special solutions <span class="math inline">\(\begin{bmatrix}-2 \\ 1 \\ 0 \\ 0\end{bmatrix}\)</span> and <span class="math inline">\(\begin{bmatrix}2 \\ 0 \\ -2 \\ 1\end{bmatrix}\)</span>. Adding our particular solution to the vectors in the nullspace, we get the complete solution to the equation <span class="math inline">\(A\boldsymbol{x} = \begin{bmatrix}1 \\ 5 \\6\end{bmatrix}\)</span> is: <span class="math display">\[
+\boldsymbol{x}_{complete} = \begin{bmatrix}-2 \\ 0 \\ 3/2 \\ 0\end{bmatrix} + c_1 \begin{bmatrix}-2 \\ 1 \\ 0 \\ 0\end{bmatrix} + c_2 \begin{bmatrix}-2 \\ 0 \\ -2 \\ 1\end{bmatrix},
+\]</span> where <span class="math inline">\(c_1\)</span> and <span class="math inline">\(c_2\)</span> are any real numbers.</p>
+<blockquote>
+<p>A typo in the <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/solving-ax-b-row-reduced-form-r/MIT18_06SCF11_Ses1.8sum.pdf" target="_blank" rel="noopener">lecture summary (PDF)</a> of this session:</p>
+<blockquote>
+<p><span class="math inline">\(c_1\)</span> is missing here...</p>
+</blockquote>
+</blockquote>
+<p>The nullspace is a two dimensional subspace of <span class="math inline">\(\mathbb{R}^4\)</span>, and the complete solution form a plane parallel to that through <span class="math inline">\(\boldsymbol{x}_p = \begin{bmatrix}-2 \\ 0 \\ 3/2 \\ 0\end{bmatrix}\)</span>.</p>
+<h3 id="rank">Rank</h3>
+<p>The rank of a matrix equals the number of pivots of that matrix. If <span class="math inline">\(A\)</span> is an <span class="math inline">\(m\)</span> by <span class="math inline">\(n\)</span> matrix of rank <span class="math inline">\(r\)</span>, we know <span class="math inline">\(r \le m\)</span> and <span class="math inline">\(r \le n\)</span>. Actually the rank tells us all the information about solutions to the equation <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span>. <span class="math display">\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+&amp; r = m = n &amp; r = n &lt; m &amp; r = m &lt; n &amp; r &lt; m, r &lt; n \\
+\hline
+R &amp; I &amp; \begin{bmatrix}I \\ \boldsymbol{0}\end{bmatrix} &amp; \begin{bmatrix}I &amp; F\end{bmatrix} &amp; \begin{bmatrix}I &amp; F \\ \boldsymbol{0} &amp; \boldsymbol{0}\end{bmatrix} \\
+\hline
+\text{Solutions to }A\boldsymbol{x} = \boldsymbol{b} &amp; 1 &amp; 0\text{ or }1 &amp; \infty &amp; 0\text{ or }\infty \\
+\hline
+\end{array}
+\]</span></p>
+<hr>
+<h2 id="session-1.10-independence-basis-and-dimension">Session 1.10: Independence, Basis and dimension</h2>
+<h3 id="linear-independence">Linear Independence</h3>
+<p><span class="math inline">\(\sum_i c_i\boldsymbol{x}_i = \boldsymbol{0}\)</span> only when <span class="math inline">\(c_1, c_2, \dots, c_n\)</span> are all <span class="math inline">\(0\)</span>.</p>
+<p><span class="math inline">\(\Leftrightarrow\)</span> The only solution to <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{0}\)</span> is <span class="math inline">\(\boldsymbol{x} = \boldsymbol{0}\)</span>, which means that the nullspace of <span class="math inline">\(A\)</span> contains only the zero vector.</p>
+<p><span class="math inline">\(\Leftrightarrow\)</span> The rank of <span class="math inline">\(A\)</span> is <span class="math inline">\(n\)</span> so there are no free variables.</p>
+<h3 id="spanning-a-space">Spanning a space</h3>
+<p>Vectors <span class="math inline">\(\boldsymbol{v}_1, \boldsymbol{v}_2, \dots, \boldsymbol{v}_k\)</span> <em>span</em> a space when the space consists of all combinations of those vectors. The space spanned is also the smallest space containing those vectors.</p>
+<h3 id="basis-and-dimension">Basis and dimension</h3>
+<p>A <em>basis</em> for a vector space is a sequence of vectors <span class="math inline">\(\boldsymbol{v}_1, \boldsymbol{v}_2, \dots, \boldsymbol{v}_d\)</span> with two properties:</p>
+<ul>
+<li><span class="math inline">\(\boldsymbol{v}_1, \boldsymbol{v}_2, \dots, \boldsymbol{v}_d\)</span> are independent;</li>
+<li><span class="math inline">\(\boldsymbol{v}_1, \boldsymbol{v}_2, \dots, \boldsymbol{v}_d\)</span> span the vector space.</li>
+</ul>
+<p>The number of vectors in a basis for a vector space is the <em>dimension</em> of the space. There are exactly <span class="math inline">\(n\)</span> vectors in every basis for <span class="math inline">\(\mathbb{R}^n\)</span>.</p>
+<h3 id="basis-of-a-column-space-and-nullspace">Basis of a column space and nullspace</h3>
+<p><span class="math display">\[\text{dimension of }C(A)  = \text{number of pivot columns of }A = \text{rank}(A)\]</span></p>
+<p><span class="math display">\[\text{dimension of }N(A)  = \text{number of free variables of }A = \text{number of columns of }A - \text{rank}(A)\]</span></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Open Courses</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Mathematics</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Linear Algebra</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MIT 18.06SC Linear Algebra</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/29/MIT-1806SC-LinearAlgebra-Session1.6-1.10/">Read more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="w-MIT-1806SC-LinearAlgebra-Session1.1-1.5" class="article article-type-w  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
