@@ -1,6 +1,6 @@
 ---
 layout: w
-title: MIT 1806SC Linear Algebra Session1.6 - 1.10
+title: MIT 1806SC Linear Algebra Session 1.6 - 1.10
 date: 2018-03-29
 tags:
     - Open Courses
@@ -32,8 +32,9 @@ Given any matrix $R$ the product $R^TR$ is always *symmetric*, which means the t
 
 A collection of vectors has to satisfy two conditions:
 
-1. closed under addition, which means the sum of any two vectors in the collection lies again in the collection,
-2. closed under multiplication by any real numbers, that is to say that multiplying any vector in the collection by any real number will not give a vector beyond the collection,
+- closed under addition, which means the sum of any two vectors in the collection lies again in the collection,
+
+- closed under multiplication by any real numbers, that is to say that multiplying any vector in the collection by any real number will not give a vector beyond the collection,
 
 or, to put it in another way, closed under linear combinations.
 
@@ -45,9 +46,9 @@ A vector space that is contained inside of another vector space is called a *sub
 
 the subspaces of $\mathbb{R}^2$ are:
 
-1. all of $\mathbb{R}^2$,
-2. any line through the zero vector and
-3. the zero vector alone.
+- all of $\mathbb{R}^2$,
+- any line through the zero vector and
+- the zero vector alone.
 
 **Every subspace must contain the zero vector.**
 
