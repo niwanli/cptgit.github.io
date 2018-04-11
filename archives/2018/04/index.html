@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://cptgit.github.io">
-  <title>MIT 18.06SC Linear Algebra Session 1.1 - 1.5 | Cap&#39;s Outpost</title>
+  <title>Archives: 2018/4 | Cap&#39;s Outpost</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hmmm... I&apos;m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWare. OK, here we go! Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces Session 1.1: The Geometry of Linear Equati">
-<meta name="keywords" content="Open Courses,Mathematics,Linear Algebra,MIT 18.06SC Linear Algebra">
-<meta property="og:type" content="article">
-<meta property="og:title" content="MIT 18.06SC Linear Algebra Session 1.1 - 1.5">
-<meta property="og:url" content="http://cptgit.github.io/2018/03/10/MIT-1806SC-LinearAlgebra-Session1.1-1.5/index.html">
+  <meta name="description" content="sharing my life">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cap&#39;s Outpost">
+<meta property="og:url" content="http://cptgit.github.io/archives/2018/04/index.html">
 <meta property="og:site_name" content="Cap&#39;s Outpost">
-<meta property="og:description" content="Hmmm... I&apos;m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWare. OK, here we go! Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces Session 1.1: The Geometry of Linear Equati">
+<meta property="og:description" content="sharing my life">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-03-29T03:28:08.985Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MIT 18.06SC Linear Algebra Session 1.1 - 1.5">
-<meta name="twitter:description" content="Hmmm... I&apos;m learning MIT 18.06SC Linear Algebra at MIT OpenCourseWare. OK, here we go! Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces Session 1.1: The Geometry of Linear Equati">
+<meta name="twitter:title" content="Cap&#39;s Outpost">
+<meta name="twitter:description" content="sharing my life">
   
     <link rel="alternative" href="/atom.xml" title="Cap&#39;s Outpost" type="application/atom+xml">
   
@@ -145,419 +143,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="w-MIT-1806SC-LinearAlgebra-Session1.1-1.5" class="article article-type-w " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      MIT 18.06SC Linear Algebra Session 1.1 - 1.5
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-w">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/04/10/围城杂感/" class="archive-article-date">
+  	<time datetime="2018-04-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-10</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/04/10/围城杂感/">围城杂感</a>
     </h1>
   
 
-        
-        <a href="/2018/03/10/MIT-1806SC-LinearAlgebra-Session1.1-1.5/" class="archive-article-date">
-  	<time datetime="2018-03-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hmmm... I'm learning <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/index.htm" target="_blank" rel="noopener">MIT 18.06SC Linear Algebra</a> at <a href="https://ocw.mit.edu/index.htm" target="_blank" rel="noopener">MIT OpenCourseWare</a>.</p>
-<p>OK, here we go!</p>
-<h1 id="unit-i-aboldsymbolx-boldsymbolb-and-the-four-subspaces">Unit I: <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span> and the Four Subspaces</h1>
-<h2 id="session-1.1-the-geometry-of-linear-equations">Session 1.1: The Geometry of Linear Equations</h2>
-<p>We have a system of equations: <span class="math display">\[
-\left\{
-\begin{aligned}
-2x - y &amp;= 0 \\
--x + 2y &amp;= 3
-\end{aligned}
-\right .
-\]</span></p>
-<a id="more"></a>
-<h3 id="row-picture">Row Picture</h3>
-<p>Line <span class="math inline">\(2x - y = 0\)</span> and line <span class="math inline">\(-x + 2y = 0\)</span> intersects at the point <span class="math inline">\((1, 2)\)</span>, so <span class="math inline">\((1, 2)\)</span> is the solution of the system of equations.</p>
-<blockquote>
-<p>Maybe I should draw a X-Y coordinates here &gt;_&gt;</p>
-</blockquote>
-<h3 id="column-picture">Column Picture</h3>
-<p>We rewrite the system of linear equations as a single equation:</p>
-<p><span class="math display">\[
-x\begin{bmatrix}2 \\ -1\end{bmatrix} + y\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}
-\]</span></p>
-<p>We see <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> as scalars of column vectors: <span class="math inline">\(\boldsymbol{v_1} = \begin{bmatrix}2 \\ -1\end{bmatrix}\)</span> and <span class="math inline">\(\boldsymbol{v_2} = \begin{bmatrix}-1 \\ 2\end{bmatrix}\)</span>, and the sum <span class="math inline">\(x\boldsymbol{v_1} + y\boldsymbol{v_2}\)</span> is called a <em>linear combination</em> of <span class="math inline">\(\boldsymbol{v_1}\)</span> and <span class="math inline">\(\boldsymbol{v_2}\)</span>.</p>
-<p>Geometrically, we can find one copy of <span class="math inline">\(\boldsymbol{v_1}\)</span> added to two copies of <span class="math inline">\(\boldsymbol{v_2}\)</span> just equals the vector <span class="math inline">\(\begin{bmatrix}0 \\ 3\end{bmatrix}\)</span>. Then the solution should be <span class="math inline">\(x = 1, y =2\)</span>.</p>
-<blockquote>
-<p>I will add a figure when time is available &gt;_&gt;</p>
-</blockquote>
-<h3 id="matrix-picture">Matrix Picture</h3>
-<p>We rewrite the equations in our example as a compact form,</p>
-<p><span class="math display">\[
-A\boldsymbol{x} = \boldsymbol{b},
-\]</span></p>
-<p>that is</p>
-<p><span class="math display">\[
-\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix}\begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}
-\]</span></p>
-<h3 id="matrix-multiplication">Matrix Multiplication</h3>
-<p><span class="math display">\[
-\begin{aligned}
-\begin{bmatrix}2 &amp; -1 \\ -1 &amp; 2\end{bmatrix} \begin{bmatrix}1 \\ 2\end{bmatrix} = 1\begin{bmatrix}2 \\ -1\end{bmatrix} + 2\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}
-\end{aligned}
-\]</span></p>
-<p>A matrix times by a vector is just <strong>a linear combination of the column vectors of the matrix</strong>.</p>
-<hr>
-<h2 id="session-1.2-an-overview-of-key-ideas">Session 1.2: An Overview of Key Ideas</h2>
-<h3 id="vectors">Vectors</h3>
-<p>Let us take linear combinations of vectors.</p>
-<h3 id="matrices">Matrices</h3>
-<p>The product of a matrix and a vector is a combination of the columns of the matrix.</p>
-<h3 id="subspaces">Subspaces</h3>
-<p>All combinations of column vectors creates a subspace. The subspaces of <span class="math inline">\(\mathbb{R}^3\)</span> are:</p>
-<ul>
-<li>the origin,</li>
-<li>a line through the origin,</li>
-<li>a plane through the origin,</li>
-<li>all of <span class="math inline">\(\mathbb{R}^3\)</span>.</li>
-</ul>
-<h3 id="conclusion">Conclusion</h3>
-<ul>
-<li><p><span class="math inline">\(A\)</span> is invertible</p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span> has the unique solution <span class="math inline">\(\boldsymbol{x}\)</span> for each <span class="math inline">\(\boldsymbol{b}\)</span></p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{0}\)</span> has no non-zero solution <span class="math inline">\(\boldsymbol{x}\)</span></p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> The columns of <span class="math inline">\(A\)</span> are <em>independent</em></p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> All vectors <span class="math inline">\(A\boldsymbol{x}\)</span> cover the whole vector space</p>
-<p>Example: <span class="math inline">\(A = \begin{bmatrix}1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1\end{bmatrix}\)</span></p></li>
-<li><p><span class="math inline">\(A\)</span> is not invertible</p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span> has a solution <span class="math inline">\(\boldsymbol{x}\)</span> only for some of <span class="math inline">\(\boldsymbol{b}\)</span> in the vector space</p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{0}\)</span> has non-zero solutions <span class="math inline">\(\boldsymbol{x}\)</span></p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> The columns of <span class="math inline">\(A\)</span> are <em>dependent</em></p>
-<p><span class="math inline">\(\Leftrightarrow\)</span> All vectors <span class="math inline">\(A\boldsymbol{x}\)</span> lies in only a subspace of the vector space</p>
-<p>Example: <span class="math inline">\(A = \begin{bmatrix}1 &amp; 0 &amp; -1 \\ -1 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1\end{bmatrix}\)</span></p></li>
-</ul>
-<hr>
-<h2 id="session-1.3-elimination-with-matrices">Session 1.3: Elimination with Matrices</h2>
-<h3 id="method-of-elimination">Method of Elimination</h3>
-<p>We have an example <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{b}\)</span>,</p>
-<p><span class="math inline">\(A = \begin{bmatrix}1 &amp; 2 &amp; 1 \\ 3 &amp; 8 &amp; 1 \\ 0 &amp; 4 &amp; 1\end{bmatrix}\)</span> and <span class="math inline">\(\boldsymbol{b} = \begin{bmatrix}2 \\ 12 \\2\end{bmatrix}\)</span>.</p>
-<p>Steps of Elimination:</p>
-<ul>
-<li>Step 1: subtract <span class="math inline">\(3\)</span> times row 1 from row 2;</li>
-<li>Step 2: subtract <span class="math inline">\(2\)</span> times row 2 from row 3.</li>
-</ul>
-<p><span class="math display">\[
-A = \begin{bmatrix}1 &amp; 2 &amp; 1 \\ 3 &amp; 8 &amp; 1 \\ 0 &amp; 4 &amp; 1\end{bmatrix}
-\rightarrow \begin{bmatrix}1 &amp; 2 &amp; 1 \\ 0 &amp; 2 &amp; -2 \\ 0 &amp; 4 &amp; 1\end{bmatrix}
-\rightarrow U = \begin{bmatrix}1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; -2 \\ 0 &amp; 0 &amp; 5\end{bmatrix}
-\]</span></p>
-<p><span class="math display">\[
-\boldsymbol{b} = \begin{bmatrix}2 \\ 12 \\ 2\end{bmatrix}
-\rightarrow \cdots \rightarrow \begin{bmatrix}2 \\ 6 \\ -10\end{bmatrix}
-\]</span></p>
-<p>Thus, we can easily solve the systems of equations, <span class="math inline">\(\begin{bmatrix}x \\ y \\ z\end{bmatrix} = \begin{bmatrix}2 \\ 1 \\ -2\end{bmatrix}\)</span>.</p>
-<h3 id="elimination-matrices">Elimination Matrices</h3>
-<p>The product of a matrix (3x3) and a column vector (3x1) is a column vector (3x1) that is a linear combination of the columns of the matrix.</p>
-<p>The product of a row vector (1x3) and a matrix (3x3) is a row vector (1x3) that is a linear combination of the rows of the matrix.</p>
-<p>For example,</p>
-<p><span class="math display">\[
-\begin{bmatrix}1 &amp; 0 &amp; 0 \\ -3 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{bmatrix}
-\begin{bmatrix}1 &amp; 2 &amp; 1 \\ 3 &amp; 8 &amp; 1 \\ 0 &amp; 4 &amp; 1\end{bmatrix}
-= \begin{bmatrix}1 &amp; 2 &amp; 1 \\ 0 &amp; 2 &amp; -2 \\ 0 &amp; 4 &amp; 1\end{bmatrix}.
-\]</span></p>
-<p>Multiplying on the left by a permutation matrix exchanges the rows of a matrix, while multiplying on the right exchanges the columns. For example,</p>
-<p><span class="math display">\[
-P = \begin{bmatrix}0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{bmatrix}.
-\]</span></p>
-<p><span class="math inline">\(P\)</span> is a <em>permutation matrix</em> and the first and second rows of the matrix <span class="math inline">\(PA\)</span> are the second and first rows of the matrix <span class="math inline">\(A\)</span>.</p>
-<p>Note, matrix multiplication is <em>associative</em> but <em>not commutative</em>.</p>
-<h3 id="inverses">Inverses</h3>
-<p>We have a matrix:</p>
-<p><span class="math display">\[
-E_{21} = \begin{bmatrix}1 &amp; 0 &amp; 0 \\ -3 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{bmatrix}
-\]</span></p>
-<p>which subtracts <span class="math inline">\(3\)</span> times row 1 from row 2. To &quot;<strong>undo</strong>&quot; this operation we must add <span class="math inline">\(3\)</span> times row 1 to row 2 using the inverse matrix:</p>
-<p><span class="math display">\[
-E_{21}^{-1} = \begin{bmatrix}1 &amp; 0 &amp; 0 \\ 3 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{bmatrix}.
-\]</span></p>
-<p>In fact, <span class="math inline">\(E_{21}^{-1}E_{21} = I\)</span>.</p>
-<hr>
-<h2 id="session-1.4-multiplication-and-inverse-matrices">Session 1.4: Multiplication and Inverse Matrices</h2>
-<h3 id="four-and-a-half-ways-we-see-matrix-multiplication">Four and a half ways we see matrix multiplication</h3>
-<p>We have <span class="math inline">\(AB = C\)</span>. <span class="math inline">\(A\)</span> is an <span class="math inline">\(m \times n\)</span> matrix and <span class="math inline">\(B\)</span> is an <span class="math inline">\(n \times p\)</span> matrix, then <span class="math inline">\(C\)</span> is an <span class="math inline">\(m \times p\)</span> matrix. We use <span class="math inline">\(c_{ij}\)</span> to denote the entry in row <span class="math inline">\(i\)</span> and column <span class="math inline">\(j\)</span> of matrix <span class="math inline">\(C\)</span> and the same denotation applies to <span class="math inline">\(a_{ij}\)</span> and <span class="math inline">\(b_{ij}\)</span>.</p>
-<h4 id="row-times-column">Row times column</h4>
-<p><span class="math inline">\(c_{ij} = \sum_{k=1}^n a_{ik}b_{kj}\)</span></p>
-<h4 id="columns">Columns</h4>
-<p>The product of matrix <span class="math inline">\(A\)</span> and column <span class="math inline">\(j\)</span> of matrix <span class="math inline">\(B\)</span> equals column <span class="math inline">\(j\)</span> of matrix <span class="math inline">\(C\)</span>. This tells us that the columns of <span class="math inline">\(C\)</span> are combinations of columns of <span class="math inline">\(A\)</span>.</p>
-<p><span class="math display">\[
-A
-\begin{bmatrix}
-| &amp; | &amp; | \\
-column 1 &amp; column 2 &amp; column 3 \\
-| &amp; | &amp; |
-\end{bmatrix}
-=\begin{bmatrix}
-| &amp; | &amp; | \\
-A(column 1) &amp; A(column 2) &amp; A(column 3) \\
-| &amp; | &amp; |
-\end{bmatrix}
-\]</span></p>
-<h4 id="rows">Rows</h4>
-<p>The product of row <span class="math inline">\(i\)</span> of matrix <span class="math inline">\(A\)</span> and matrix <span class="math inline">\(B\)</span> equals row <span class="math inline">\(i\)</span> of matrix <span class="math inline">\(C\)</span>. So the rows of <span class="math inline">\(C\)</span> are combinations of rows of <span class="math inline">\(B\)</span>.</p>
-<p><span class="math display">\[
-\left[
-\begin{matrix}
---- &amp; row 1 &amp; --- \\
---- &amp; row 2 &amp; --- \\
---- &amp; row 3 &amp; ---
-\end{matrix}
-\right]
-B
-=\left[
-\begin{matrix}
---- &amp; (row 1)B &amp; --- \\
---- &amp; (row 2)B &amp; --- \\
---- &amp; (row 3)B &amp; ---
-\end{matrix}
-\right]
-\]</span></p>
-<h4 id="column-times-row">Column times row</h4>
-<p><span class="math display">\[
-AB = \sum_{k=1}{n}
-\begin{bmatrix}a_{1k} \\ \vdots \\ a_{mk}\end{bmatrix}
-\begin{bmatrix}b_{k1} &amp; \cdots &amp; b_{kp}\end{bmatrix}
-\]</span></p>
-<blockquote>
-<p>note: Here I fixed a typo in the <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf" target="_blank" rel="noopener">lecture summary (PDf)</a> of this session: <span class="math inline">\(b_{kp}\)</span> instead of the original <span class="math inline">\(b_{kn}\)</span>.</p>
-</blockquote>
-<h4 id="blocks">Blocks</h4>
-<p><span class="math display">\[
-\begin{bmatrix}A_1 &amp; A_2 \\ A_3 &amp; A_4 \end{bmatrix}
-\begin{bmatrix}B_1 &amp; B_2 \\ B_3 &amp; B_4 \end{bmatrix}
-=\begin{bmatrix}
-A_1B_1+A_2B_3 &amp; A_1B_2+A_2B_4 \\
-A_3B_1+A_4B_3 &amp; A_3B_2+A_4B_4
-\end{bmatrix}
-\]</span></p>
-<h3 id="inverses-1">Inverses</h3>
-<p>If <span class="math inline">\(A\)</span> is <em>singular</em> or <em>not invertible</em>,</p>
-<p>then A does not have an inverse,</p>
-<p>and we can find some non-zero vector <span class="math inline">\(\boldsymbol{x}\)</span> for which <span class="math inline">\(A\boldsymbol{x} = \boldsymbol{0}\)</span></p>
-<h4 id="gauss-jordan-elimination">Gauss-Jordan Elimination</h4>
-<p><span class="math display">\[
-E
-\left[
-\begin{array}{c|c}
-A &amp; I
-\end{array}
-\right]
-=\left[
-\begin{array}{c|c}
-I &amp; E
-\end{array}
-\right]
-\]</span> If <span class="math inline">\(EA = I\)</span>, then <span class="math inline">\(E = A^{-1}\)</span>.</p>
-<hr>
-<h2 id="session-1.5-factorization-into-a-lu">Session 1.5: Factorization into <span class="math inline">\(A = LU\)</span></h2>
-<h3 id="inverse-of-a-product">Inverse of a product</h3>
-<p><span class="math display">\[(AB)^{-1} = B^{-1}A^{-1}\]</span></p>
-<h3 id="transpose-of-a-product">Transpose of a product</h3>
-<p><span class="math display">\[(AB)^{T} = B^{T}A^{T}, \quad (A^{T})^{-1} = (A^{-1})^{T}\]</span></p>
-<h3 id="a-lu"><span class="math inline">\(A = LU\)</span></h3>
-<p>We can use elimination to convert <span class="math inline">\(A\)</span> into an upper triangular matrix <span class="math inline">\(U\)</span>, that is <span class="math inline">\(EA = U\)</span>, and further we can also convert this to a factorization <span class="math inline">\(A = LU\)</span> in which <span class="math inline">\(L = E^{-1}\)</span>.</p>
-<p>For example, in a three dimensional case, if <span class="math inline">\(E_{32}E_{31}E_{21}A = U\)</span> then <span class="math inline">\(A=E_{21}^{-1}E_{31}^{-1}E_{32}^{-1}U = LU\)</span>. Suppose <span class="math inline">\(E_{31}\)</span> is the identity matrix and <span class="math inline">\(E_{32}\)</span> and <span class="math inline">\(E_{21}\)</span> are as shown below:</p>
-<p><span class="math display">\[
-\begin{array}{cccc}
-E_{32} &amp; E_{21} &amp; &amp; E \\
-\begin{bmatrix}1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; -5 &amp; 1\end{bmatrix}
-&amp; \begin{bmatrix}1 &amp; 0 &amp; 0 \\ -2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{bmatrix}
-&amp; = &amp; \begin{bmatrix}1 &amp; 0 &amp; 0 \\ -2 &amp; 1 &amp; 0 \\ 10 &amp; -5 &amp; 1\end{bmatrix}
-\end{array}.
-\]</span></p>
-<p>Here <span class="math inline">\(L = E^{-1} = E_{21}^{-1}E_{32}^{-1}\)</span>:</p>
-<p><span class="math display">\[
-\begin{array}{cccc}
-E_{21}^{-1} &amp; E_{32}^{-1} &amp; &amp; L \\
-\begin{bmatrix}1 &amp; 0 &amp; 0 \\ \underline{2} &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{bmatrix}
-&amp; \begin{bmatrix}1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; \underline{5} &amp; 1\end{bmatrix}
-&amp; = &amp; \begin{bmatrix}1 &amp; 0 &amp; 0 \\ \underline{2} &amp; 1 &amp; 0 \\ 0 &amp; \underline{5} &amp; 1\end{bmatrix}
-\end{array}
-\]</span></p>
-<p>Notice the 0 in row three column one of <span class="math inline">\(L\)</span>, where <span class="math inline">\(E\)</span> had a <span class="math inline">\(10\)</span>. The factorization <span class="math inline">\(A = LU\)</span> is preferable to the statement <span class="math inline">\(EA = U\)</span> because the combination of row subtractions does not have the effect on <span class="math inline">\(L\)</span> that it did on <span class="math inline">\(E\)</span>.</p>
-<p><strong>If there are no row exchanges, the multipliers from the elimination matrices are copied directly into <span class="math inline">\(L\)</span>.</strong></p>
-<h3 id="cost-of-elimination">Cost of elimination</h3>
-<p>If we define a typical operation is to multiply one row and then subtract it from another, then the total number of operations needed to factor <span class="math inline">\(n \times n\)</span> <span class="math inline">\(A\)</span> into <span class="math inline">\(LU\)</span> is on the order of <span class="math inline">\(n^3\)</span>:</p>
-<p><span class="math display">\[1^2 + 2^2 + \cdots + (n - 1)^2 + n^2 = \sum_{i = 1}^{n}i^2 \approx \int_0^n x\,\mathrm{d}x = \frac{1}{3}n^3.\]</span></p>
-<p>While we’re factoring <span class="math inline">\(A\)</span> we’re also operating on <span class="math inline">\(\boldsymbol{b}\)</span>. That costs about <span class="math inline">\(n^2\)</span> operations, which is hardly worth counting compared to <span class="math inline">\(1/3n^3\)</span>.</p>
-<h3 id="row-exchanges">Row exchanges</h3>
-<p>The inverse of any permutation matrix <span class="math inline">\(P\)</span> is <span class="math inline">\(P^{-1} = P^{T}\)</span>.</p>
-<p>There are <span class="math inline">\(n!\)</span> different ways to permute the rows of an <span class="math inline">\(n \times n\)</span> matrix (including the permutation that leaves all rows unfixed) so there are <span class="math inline">\(n!\)</span> permutation matrices. These matrices form a <em>multiplicative group</em>.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Open Courses</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Mathematics</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Linear Algebra</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MIT 18.06SC Linear Algebra</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Reading</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://cptgit.github.io/2018/03/10/MIT-1806SC-LinearAlgebra-Session1.1-1.5/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/03/29/MIT-1806SC-LinearAlgebra-Session1.6-1.10/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MIT 1806SC Linear Algebra Session 1.6 - 1.10
-        
-      </div>
-    </a>
   
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#unit-i-aboldsymbolx-boldsymbolb-and-the-four-subspaces"><span class="toc-number">1.</span> <span class="toc-text">Unit I: \(A\boldsymbol{x} = \boldsymbol{b}\) and the Four Subspaces</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#session-1.1-the-geometry-of-linear-equations"><span class="toc-number">1.1.</span> <span class="toc-text">Session 1.1: The Geometry of Linear Equations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#row-picture"><span class="toc-number">1.1.1.</span> <span class="toc-text">Row Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#column-picture"><span class="toc-number">1.1.2.</span> <span class="toc-text">Column Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#matrix-picture"><span class="toc-number">1.1.3.</span> <span class="toc-text">Matrix Picture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#matrix-multiplication"><span class="toc-number">1.1.4.</span> <span class="toc-text">Matrix Multiplication</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#session-1.2-an-overview-of-key-ideas"><span class="toc-number">1.2.</span> <span class="toc-text">Session 1.2: An Overview of Key Ideas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vectors"><span class="toc-number">1.2.1.</span> <span class="toc-text">Vectors</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#matrices"><span class="toc-number">1.2.2.</span> <span class="toc-text">Matrices</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#subspaces"><span class="toc-number">1.2.3.</span> <span class="toc-text">Subspaces</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#conclusion"><span class="toc-number">1.2.4.</span> <span class="toc-text">Conclusion</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#session-1.3-elimination-with-matrices"><span class="toc-number">1.3.</span> <span class="toc-text">Session 1.3: Elimination with Matrices</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#method-of-elimination"><span class="toc-number">1.3.1.</span> <span class="toc-text">Method of Elimination</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#elimination-matrices"><span class="toc-number">1.3.2.</span> <span class="toc-text">Elimination Matrices</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#inverses"><span class="toc-number">1.3.3.</span> <span class="toc-text">Inverses</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#session-1.4-multiplication-and-inverse-matrices"><span class="toc-number">1.4.</span> <span class="toc-text">Session 1.4: Multiplication and Inverse Matrices</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#four-and-a-half-ways-we-see-matrix-multiplication"><span class="toc-number">1.4.1.</span> <span class="toc-text">Four and a half ways we see matrix multiplication</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#row-times-column"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">Row times column</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#columns"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">Columns</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rows"><span class="toc-number">1.4.1.3.</span> <span class="toc-text">Rows</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#column-times-row"><span class="toc-number">1.4.1.4.</span> <span class="toc-text">Column times row</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#blocks"><span class="toc-number">1.4.1.5.</span> <span class="toc-text">Blocks</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#inverses-1"><span class="toc-number">1.4.2.</span> <span class="toc-text">Inverses</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#gauss-jordan-elimination"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">Gauss-Jordan Elimination</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#session-1.5-factorization-into-a-lu"><span class="toc-number">1.5.</span> <span class="toc-text">Session 1.5: Factorization into \(A = LU\)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#inverse-of-a-product"><span class="toc-number">1.5.1.</span> <span class="toc-text">Inverse of a product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#transpose-of-a-product"><span class="toc-number">1.5.2.</span> <span class="toc-text">Transpose of a product</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#a-lu"><span class="toc-number">1.5.3.</span> <span class="toc-text">\(A = LU\)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cost-of-elimination"><span class="toc-number">1.5.4.</span> <span class="toc-text">Cost of elimination</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#row-exchanges"><span class="toc-number">1.5.5.</span> <span class="toc-text">Row exchanges</span></a></li></ol></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "Sat Mar 10 2018 00:00:00 GMT+0800",
-  owner: 'CptGit',
-  repo: 'storing-comments',
-  oauth: {
-    client_id: '4d03732b51a1d8746e8f',
-    client_secret: 'e439f67449a883e10d9c62dad75e4a633c094bf8',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
-  
+    
 
 
           </div>
@@ -588,8 +227,8 @@ gitment.render('gitment-ctn')
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
