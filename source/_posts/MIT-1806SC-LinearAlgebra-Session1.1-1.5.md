@@ -347,3 +347,11 @@ While we’re factoring $A$ we’re also operating on $\boldsymbol{b}$. That cos
 The inverse of any permutation matrix $P$ is $P^{-1} = P^{T}$.
 
 There are $n!$ different ways to permute the rows of an $n \times n$ matrix (including the permutation that leaves all rows unfixed) so there are $n!$ permutation matrices. These matrices form a *multiplicative group*.
+
+-----------------
+
+**LICENSE**:
+
+This work is built upon the materials on [MIT OCW](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/index.htm).
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
